@@ -7,6 +7,7 @@ import { StringInterpolationComponent } from './string-interpolation/string-inte
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { AttrClassComponent } from './attr-class/attr-class.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AttrClassComponent } from './attr-class/attr-class.component';
     StringInterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    AttrClassComponent
+    AttrClassComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
