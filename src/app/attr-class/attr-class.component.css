@@ -1,0 +1,33 @@
+#info {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.bg-yellow {
+    background-color: greenyellow;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+[more-than-5=true] {
+    padding: 10px;
+    background-color: yellow;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+[more-than-5=true][more-than-10=true] {
+    background-color: orange;
+    font-size: 1.3em;
+}
+button {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+button:first-child {
+    margin-right: 10px;
+}

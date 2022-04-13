@@ -1,0 +1,14 @@
+<div id="info"
+    
+    [class]="'bg-yellow'"
+    [class.red]="count % 2 === 0"
+    [class.blue]="count % 2 !== 0"
+    
+    [attr.more-than-5]="count > 5"
+    [attr.more-than-10]="count > 10"
+
+    >Lorem ipsum ({{count}})</div>
+<div>
+    <button (click)="inc(-1)">-</button>
+    <button (click)="inc(1)">+</button>
+</div>
