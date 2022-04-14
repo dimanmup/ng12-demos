@@ -1,0 +1,15 @@
+<h3>1. <u>Через две односторонние</u></h3>
+<b>data source --> view target --> data source</b><br>
+<input [value]="username" (input)="updateUsername($event)"><br>
+<input [value]="username" (input)="updateUsername($event)"><br>
+<span>Hello {{username}}!</span><br>
+<button (click)="writeJohn()">Write "John"</button><br>
+<hr>
+
+<h3>2. <u>Через ngModel</u></h3>
+<b>Country</b><br>
+<input [(ngModel)]="country"><br>
+<textarea [(ngModel)]="country"></textarea><br>
+<b>City</b><br>
+<input [(ngModel)]="city"><br>
+<textarea [(ngModel)]="city"></textarea>
