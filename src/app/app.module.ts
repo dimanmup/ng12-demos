@@ -10,6 +10,7 @@ import { AttrClassComponent } from './attr-class/attr-class.component';
 import { EventComponent } from './event/event.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesBuiltInAttributesComponent } from './directives-built-in-attributes/directives-built-in-attributes.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     EventBindingComponent,
     AttrClassComponent,
     EventComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    DirectivesBuiltInAttributesComponent
   ],
   imports: [
     BrowserModule,
