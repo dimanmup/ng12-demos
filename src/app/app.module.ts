@@ -11,6 +11,7 @@ import { EventComponent } from './event/event.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesBuiltInAttributesComponent } from './directives-built-in-attributes/directives-built-in-attributes.component';
+import { DirectivesBuiltInStructuralComponent } from './directives-built-in-structural/directives-built-in-structural.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DirectivesBuiltInAttributesComponent } from './directives-built-in-attr
     AttrClassComponent,
     EventComponent,
     TwoWayBindingComponent,
-    DirectivesBuiltInAttributesComponent
+    DirectivesBuiltInAttributesComponent,
+    DirectivesBuiltInStructuralComponent
   ],
   imports: [
     BrowserModule,

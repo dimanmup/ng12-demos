@@ -1,0 +1,9 @@
+div {
+    font-family: Consolas;
+}
+.odd {
+    background-color: lightcyan;
+}
+.even {
+    background-color: cyan;
+}

@@ -1,0 +1,44 @@
+<h3>If</h3>
+
+<ng-template #elseBlock><div>5</div></ng-template>
+<ng-template #thenBlock><div>6</div></ng-template>
+
+<div *ngIf="false">1</div>
+<div *ngIf="null">2</div>
+<div *ngIf="undefined">3</div>
+<div *ngIf="true">4</div>
+
+<div *ngIf="false; else elseBlock">ERROR</div>
+<div *ngIf="true; then thenBlock else elseBlock"></div>
+
+<hr>
+<h3>For</h3>
+
+<div><b>List 1</b></div>
+<div *ngFor="let person of persons">{{person.name}} ({{person.age}})</div>
+
+<div><b>List 2</b></div>
+<div *ngFor="let person of persons; 
+            index as i;
+            first as isFirst;
+            last as isLast;
+            even as isEven;
+            odd as isOdd;
+            ">
+    <div class="item">
+        <div [class.even]="isEven" [class.odd]="isOdd">
+            <span>{{i}}. {{person.name}}</span>
+            <code *ngIf="isFirst"> (first)</code>
+            <code *ngIf="isLast"> (last)</code>
+        </div>
+    </div>
+</div>
+
+<hr>
+<h3>Switch</h3>
+
+<div [ngSwitch]="httpStatusCode">
+    <div *ngSwitchCase="401">Unauthorized</div>
+    <div *ngSwitchCase="404">Not found</div>
+    <div *ngSwitchDefault>OK</div>
+</div>
