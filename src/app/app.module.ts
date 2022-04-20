@@ -12,6 +12,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { FormsModule } from '@angular/forms';
 import { DirectivesBuiltInAttributesComponent } from './directives-built-in-attributes/directives-built-in-attributes.component';
 import { DirectivesBuiltInStructuralComponent } from './directives-built-in-structural/directives-built-in-structural.component';
+import { ItemComponent } from './structural-in-componental/item/item.component';
+import { StructuralInComponentalComponent } from './structural-in-componental/structural-in-componental.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { DirectivesBuiltInStructuralComponent } from './directives-built-in-stru
     EventComponent,
     TwoWayBindingComponent,
     DirectivesBuiltInAttributesComponent,
-    DirectivesBuiltInStructuralComponent
+    DirectivesBuiltInStructuralComponent,
+    ItemComponent,
+    StructuralInComponentalComponent
   ],
   imports: [
     BrowserModule,
